@@ -39,7 +39,7 @@ export default class Search extends Component {
                 <div className={ "head px-16 pt-10 " + (this.props.expanded ? 'md:pt-32' : '') }>
                     {/* Heading */}
                     <div className="heading text-center text-2xl">
-                        <span className="font-light">minimal</span><span className="font-normal">pedia</span>
+                        <span className="font-light">Metastem</span><span className="font-normal">Wiki</span>
                     </div>
 
                     {/* Searchbox and language selector */}
