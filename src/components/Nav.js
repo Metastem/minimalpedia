@@ -45,7 +45,7 @@ export default class Nav extends Component {
                 <div className="md:w-1/3" />
                 {/* Center: "minimalpedia" as link to home */}
                 <Link to="/" className="w-1/4 md:w-1/3 no-underline flex justify-left md:justify-center">
-                    <span className="font-light">minimal</span><span className="font-normal">pedia</span>
+                    <span className="font-light">Metastem</span><span className="font-normal">Wiki</span>
                 </Link>
                 {/* Right: Searchbox */}
                 <div className="w-1/2 md:w-1/3">
