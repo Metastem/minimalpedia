@@ -39,7 +39,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     // Update title. This will reset any title set by the article pages
-    document.title = 'minimalpedia';
+    document.title = 'Metastem Wiki';
   }
 
   // Handle update of search query
