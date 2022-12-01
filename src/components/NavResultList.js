@@ -9,7 +9,7 @@ export default class NavResultList extends Component {
         const results = this.props.results;
 
         // Set message returned if there are no results (yet)
-        let message = 'Let me ask Wikipedia for that...'
+        let message = 'Let me ask Metastem for that...'
         if (this.props.totalResults === 0) {
             message = 'I could not find any results';
         }
