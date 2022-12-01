@@ -74,7 +74,7 @@ class Article extends Component {
         title: query
     });
     // Replace document title with article title
-    document.title = query.replace(/_/g, ' ') + ' - minimalpedia';
+    document.title = query.replace(/_/g, ' ') + ' - Metastem Wiki';
     // Reset hover preview
     this.setState({
       hover: {
