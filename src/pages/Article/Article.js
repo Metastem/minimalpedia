@@ -45,7 +45,7 @@ class Article extends Component {
     if (locationChanged) {
       // Reset page content
       this.sidebar.current.innerHTML = '';
-      this.text.current.innerHTML = 'Getting your article from Wikipedia...';
+      this.text.current.innerHTML = 'Getting your article from Metastem...';
       this.setState({
           image: '',
           hover: {
