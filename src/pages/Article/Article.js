@@ -86,7 +86,7 @@ class Article extends Component {
 
     // Set timeout to update loading message after 10 seconds if still loading
     let loadingTimeout = setTimeout(() => {
-      this.text.current.innerHTML = 'Still loading the article from Wikipedia...';
+      this.text.current.innerHTML = 'Still loading the article from Metastem...';
     }, 10000);
 
     // Get information using wikipedia API
@@ -108,7 +108,7 @@ class Article extends Component {
 
       // Replace common errors with custom error messages
       if (String(err) === "Error: No article found") {
-        err = 'Sorry, but we couldn\'t find this article on Wikipedia'
+        err = 'Sorry, but we couldn\'t find this article on Metastem'
       }
 
       // Display error
@@ -321,7 +321,7 @@ class Article extends Component {
       <Nav language={ this.props.match.params.language ? this.props.match.params.language : 'en' } />
 
       <div className="md:flex md:min-h-screen article">
-        {/* Hover Preview shown when hovering over other Wikipedia articles */}
+        {/* Hover Preview shown when hovering over other Metastem articles */}
         <HoverPreview 
           language={ this.props.match.params.language ? this.props.match.params.language : 'en' }
           position={ this.state.hover.position } 
@@ -342,7 +342,7 @@ class Article extends Component {
         {/* Main content */}
         <div className="w-screen md:w-2/3 pl-16 md:pl-6 p-6 info">
           <h2>{ this.state.title.replace(/_/g, ' ') }</h2>
-          <div ref={ this.text }>Getting your article from Wikipedia...</div>
+          <div ref={ this.text }>Getting your article from Metastem...</div>
         </div>
         
       </div>
